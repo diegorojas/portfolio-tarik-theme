@@ -26,37 +26,17 @@
 
 <body <?php body_class(); ?>>
 
-<div id="wrapper">
+<div id="wrapper-portfolio">
 	<div id="main">
     
     <div id="coluna-esquerda">
     <hgroup id="logo">
         <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-         TARIK<br />
-	KLEIN
+			TARIK<br />
+			KLEIN
         </a>
     </hgroup>
           
-    <div id="menu-brasa">
-        <ul>
-            <?php
-			$classe_design = null;
-			$classe_web = null;
-			$classe_cultura = null;
-            $wpurl = get_bloginfo ('wpurl');
-         
-            if (strpos($wpurl,'design') !== false) {
-                $classe_design = ' atual-design';
-            }
-            if (strpos($wpurl,'web') !== false) {
-                $classe_web = ' atual-web';
-            }
-            if (strpos($wpurl,'cultura') !== false) {
-                $classe_cultura = ' atual-cultura';
-            }
-             ?>
-        </ul>
-    </div><!-- #menu-brasa -->
     
     <nav id="navigation">
     
