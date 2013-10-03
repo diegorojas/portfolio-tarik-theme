@@ -24,7 +24,7 @@
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body class="portfolio">
 
 <div id="wrapper-portfolio">
 	<div id="main-portfolio">
