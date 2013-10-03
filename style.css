@@ -64,7 +64,7 @@ table { border-collapse: collapse; border-spacing: 0; }/* tables still need 'cel
 
 body {
 	font-family: Arial, sans-serif;
-    background: url("images/bg.jpg") repeat scroll right top #454545;
+    background: #FFF;
 	color: #555;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -188,7 +188,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 
 #coluna-esquerda {
 	float: left;
-	width: 22%;
+	width: 297px;
 	position: fixed;
 	display: block;
 	background: url(images/bg-esq.jpg) no-repeat fixed left -130px #677b6e;
@@ -689,10 +689,16 @@ footer.entry-meta:before, footer.entry-meta:after {
 	text-transform: uppercase;
 	font-size:2.3em;
 	line-height:1.4em;
-	text-shadow: 0px 1px 1px #000;
-	-webkit-box-shadow: 0 1px 0 0 #000;
-	color: #CCC;
+	text-shadow: 0px 1px 1px #CCC;
+	-webkit-box-shadow: 0 1px 0 0 #CCC;
+	color: #000;
 }
+
+#portfolio h1.entry-title {
+    margin: 10px 20px 10px 20px;
+	text-align: right;
+}
+
 #content h1, #content h2, #content h3 {
 	padding-bottom: 10px;
 }
@@ -811,7 +817,7 @@ img[class*="attachment-"] {
 }
 img.size-full,
 img.size-large {
-	max-width: 97.5%;
+	max-width: 100%;
 	width: auto; /* Prevent stretching of full-size and large-size images with height and width attributes in IE8 */
 	height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
 }
@@ -828,7 +834,7 @@ img.aligncenter {
 }
 p img,
 .wp-caption {
-	margin-top: 0.4em;
+	margin-top: 0;
 }
 .wp-caption {
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -877,8 +883,8 @@ img#wpstats {
 img[class*="align"],
 img[class*="wp-image-"],
 #content .gallery .gallery-icon img {/* Add fancy borders to all WordPress-added images but not things like badges and icons and the like */
-	border: 1px solid #ddd;
-	padding: 6px;
+	border: 0;
+	padding: 0;
 }
 .wp-caption img {
 	border-color: #eee;
@@ -1018,10 +1024,11 @@ embed, iframe, object {
     text-transform: uppercase;
     top: 20%;
 	color:#fff;
-	display: none;
+	display: none !important;
 }
 #portfolio a.title-overlay:hover {
 	text-decoration:none;
+	display: none !important;
 
 }
 #portfolio .no-thumb {
@@ -1478,9 +1485,9 @@ h3#pings {
 }
 
 #conteudo-single {
-	margin: 30px 0 30px 70px;
+	margin:0;
 	float: left;
-	width: 40%;
+	width: 100%;
 }
 
 #box-single {
@@ -1507,7 +1514,7 @@ h3#pings {
 #conteudo-single p {
 	font-family: 'Oswald', Arial, sans-serif;
 	color: #CCC;
-    margin: 0 0 10px !important;
+    margin: 0 0 !important;
 	font-size: 1.2em;
 	line-height: 1.3em;
 }
