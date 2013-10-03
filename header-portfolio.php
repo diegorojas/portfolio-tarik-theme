@@ -27,13 +27,12 @@
 <body <?php body_class(); ?>>
 
 <div id="wrapper-portfolio">
-	<div id="main">
+	<div id="main-portfolio">
     
     <div id="coluna-esquerda">
     <hgroup id="logo">
         <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-			TARIK<br />
-			KLEIN
+			<?php echo bloginfo( 'name' ) ?>
         </a>
     </hgroup>
           

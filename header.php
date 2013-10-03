@@ -25,22 +25,19 @@
 <body <?php body_class(); ?>>
 <div id="wrapper">
 	<header id="branding">
-    	<div class="col-width">
-        <?php $heading_tag = ( is_home() || is_front_page() ) ? 'h1' : 'div'; ?>
-			<hgroup id="logo">
-				<<?php echo $heading_tag; ?> id="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-                <?php if ( of_get_option('logo', false) ) { ?>
-					<img src="<?php echo of_get_option('logo'); ?>" alt="<?php echo bloginfo( 'name' ) ?>" />
-				<?php } else {
-					bloginfo( 'name' );
-				}?>
-                </a>
-                </<?php echo $heading_tag; ?>>
-				<?php if ( !of_get_option('logo', false) ) { ?>
-                	<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
-                <?php } ?>
-			</hgroup>
-      
+        
+			<?php
+				// Check to see if the header image has been removed
+				$header_image = get_header_image();
+				if ( ! empty( $header_image ) ) :
+			?>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+					<img src="<?php header_image(); ?>" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="" />
+			</a>
+			<?php endif; // end check for removed header image ?>	
+			
+			
+		
 		<!-- <nav id="navigation">
 			<h3 class="menu-toggle"><?php // _e( 'Menu', 'portfoliopress' ); ?></h3>
 			<div class="skip-link screen-reader-text"><a href="#content" title="<?php // esc_attr_e( 'Skip to content', 'portfoliopress' ); ?>"><?php // _e( 'Skip to content', 'portfoliopress' ); ?></a></div>
@@ -48,8 +45,6 @@
 			<?php // wp_nav_menu( array( 'theme_location' => 'primary') ); ?>
 		</nav> -->
 		<!-- #access -->
-    
-    </div>
     
 	</header><!-- #branding -->
 

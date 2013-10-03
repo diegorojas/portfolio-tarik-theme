@@ -64,8 +64,11 @@ table { border-collapse: collapse; border-spacing: 0; }/* tables still need 'cel
 
 body {
 	font-family: Arial, sans-serif;
-    background: #FFF;
+     background: none repeat scroll 0 0 #EEE;
 	color: #555;
+	overflow: hidden;
+	margin:0;
+	padding: 0;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Oswald', Arial, sans-serif;
@@ -200,8 +203,9 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 /* Coluna Direita */
 #coluna-direita {
 	float: left;
-	width: 78%;
-	margin-left: 22%;
+	max-width: 78%;
+	width: auto;
+	margin-left: 297px;
 }
 
 #dentro {
@@ -221,6 +225,12 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 	height: auto;
 }
 
+#branding img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
 #branding-portfolio {
 	width: 22%;
 	float: left;
@@ -233,6 +243,12 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 	min-height: 100%;
 }
 
+#primary {
+    float: left;
+    margin: 0 -26.4% 0 0;
+    width: 100%;
+}
+
 
 #logo {
     margin: 2em 0 0 2em;
@@ -242,13 +258,13 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 	height: 210px;
     width: 225px;
 	display: block;
-	text-indent: -999999px;
 }
 
 #logo a {
 	position: absolute;
     height: 210px;
     width: 225px;
+	text-indent: -999999px;
 }
 
 #logo #site-title {
@@ -321,14 +337,24 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
     -moz-transition: all 0.2s ease-in-out;  /* FF4+ */
     -ms-transition: all 0.2s ease-in-out;  /* IE10? */
     -o-transition: all 0.2s ease-in-out;  /* Opera 10.5+ */
-    transition: all 0.2s ease-in-out; 
+    transition: all 0.2s ease-in-out;
+	background: none repeat scroll 0 0 #000000 !important;
+    padding-right: 10px;
 }
-#navigation .menu > ul > li:hover, #navigation .menu > ul > .current-page-item, #navigation .menu > ul > .current-menu-parent, #navigation .menu > ul > .current-menu-item {
+#navigation .menu > ul > .current-page-item, #navigation .menu > ul > .current-menu-parent, #navigation .menu > ul > .current-menu-item {
 	-moz-border-radius:2px;
 	-webkit-border-radius:2px;
 	border-radius:2px;
 	background: #FFF;
 	margin-right: 1em; 
+}
+
+#navigation .menu > ul > li:hover {
+	background: none repeat scroll 0 0 #BAB12D !important;
+	}
+	
+#navigation .menu > ul > li.current-menu-item {	
+	background: none repeat scroll 0 0 #5BB6DD !important;
 }
 #navigation ul li {
 	/*float:left;*/
@@ -489,20 +515,26 @@ background: none repeat scroll 0 0 #6E8C23;
 /* Structure */
 
 #wrapper-portfolio {
+	min-width: 600px;
+	position: inherit;
 	width: 100%;
-	float: left;
-	position: relative;
 }
 
 #wrapper {
 	max-width: 1000px;
 	margin: 0 auto;
+	background: none repeat scroll 0 0 #FFFFFF;
 }
 
-#main {
+#main-portfolio {
 	padding:0;
 	margin: 0;
 
+}
+#main {
+
+margin: 0 25px;
+padding:0;
 }
 
 .col-width {
@@ -867,7 +899,7 @@ p img,
 	border: none;
 }
 img#wpstats {
-	display: block;
+	display: none;
 	margin: 0 auto 15px;
 }
 #content .gallery-columns-4 .gallery-item {
@@ -1488,6 +1520,7 @@ h3#pings {
 	margin:0;
 	float: left;
 	width: 100%;
+	
 }
 
 #box-single {
