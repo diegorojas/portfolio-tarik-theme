@@ -36,7 +36,7 @@ if ( post_password_required() ) {
 			
 		$args = array(
 			'post_type' => 'portfolio',
-			'posts_per_page' => 16,
+			'posts_per_page' => 20,
 			'paged' => $paged );
 		query_posts( $args );
 	}
@@ -47,7 +47,7 @@ if ( post_password_required() ) {
 	<?php if ( is_tax() ): ?>
 	<header class="entry-header">
 		<h1 class="entry-title"><?php echo single_cat_title( '', false ); ?></h1>
-		<?php $categorydesc = category_description(); if ( ! empty( $categorydesc ) ) echo apply_filters( 'archive_meta', '<div class="archive-meta">' . $categorydesc . '</div>' ); ?>
+		<?php // $categorydesc = category_description(); if ( ! empty( $categorydesc ) ) echo apply_filters( 'archive_meta', '<div class="archive-meta">' . $categorydesc . '</div>' ); ?>
 	</header>
 
 	<?php endif; ?>
@@ -55,7 +55,7 @@ if ( post_password_required() ) {
 	<?php  if ( have_posts() ) : $count = 0;
 		while ( have_posts() ) : the_post(); $count++;
 		$classes = 'portfolio-item item-' . $count;
-		if ( $count % 3 == 0 ) {
+		if ( $count % 2 == 0 ) {
 			$classes .= ' ie-col3';
 		}
 		if ( !has_post_thumbnail() ) {
@@ -71,7 +71,23 @@ if ( post_password_required() ) {
 
 		<?php endwhile; ?>
 
-        <?php portfoliopress_content_nav(); ?>
+		<?php /* Display navigation to next/previous pages when applicable */ ?>
+		<?php global $wp_query;  
+		$total_pages = $wp_query->max_num_pages;  
+		if ($total_pages > 1){  
+		  $current_page = max(1, get_query_var('paged'));  
+		  echo '<div class="page_nav">';  
+		  echo paginate_links(array(  
+			  'base' => get_pagenum_link(1) . '%_%',  
+			  'format' => 'page/%#%',  
+			  'current' => $current_page,  
+			  'total' => $total_pages,  
+			  'prev_text' => '<< Anteriores',  
+			  'next_text' => 'Pr&oacute;ximos >>'  
+			));  
+		  echo '</div>';  
+		} 
+		?>
 			
 		<?php else: ?>
 

@@ -1081,23 +1081,30 @@ embed, iframe, object {
 	max-width: 980px;
 }
 
-/* Pagination / WP-Pagenavi */
+/* Pagination / page_nav*/
 
 /* If you're using PageNavi you should turn the css in its settings page */
 
-.wp-pagenavi {
+.page_nav{
 	clear:both;
 	font-size:12px;
-	padding:10px 15px;
+	padding:30px 15px;
 	border:1px solid #ddd;
 	border-width:1px 0 1px;
+	position: relative;
+	text-align: center;
 }
+
+.page-numbers {
+
+}
+
 #navigation {
 	display:block;
 }
-#navigation ul-entries a, .wp-pagenavi a:link, .wp-pagenavi a:visited, .wp-pagenavi .current, .wp-pagenavi .on, .wp-pagenavi a:hover, .wp-pagenavi span.extend, .wp-pagenavi span.pages {
+#navigation a, .page_nav a:link, .page_nav a:visited, .page_nav.current, .page_nav a:hover, .page_nav span.extend, .page_nav span.pages {
 	display: block;
-	font:italic 12px/16px Georgia, serif;
+	font:15px "PT Sans", sans-serif;
 	color:#777;
 	text-decoration:none;
 	padding:0;
@@ -1105,26 +1112,31 @@ embed, iframe, object {
 #navigation ul-entries a:hover {
 	text-decoration:underline;
 }
-.wp-pagenavi a:link, .wp-pagenavi a:visited {
+.page_nav a:link, .page_nav a:visited {
 	display: inline;
 	text-decoration: none;
 	background: #fff;
-	background:rgba(255, 255, 255, 0.4);
 	color: #666;
 	padding: 3px 7px;
-	border:1px solid #ddd;
-	border:1px solid rgba(0, 0, 0, 0.2);
 	margin-left:10px;
 }
-.wp-pagenavi .current, .wp-pagenavi .on, .wp-pagenavi a:hover {
+.page_nav.current, .page_nav a:hover {
 	display:inline;
 	padding: 3px 7px;
-	background: #fff;
-	background:rgba(0, 0, 0, 0.5);
-	border:1px solid #bbb;
+	background: #C14133;
+	color: #fff;
 	margin-left:10px;
 }
-.wp-pagenavi span.extend, .wp-pagenavi span.pages {
+
+.page_nav span.current {
+	display:inline;
+	padding: 3px 7px;
+	background: #C14133;
+	font:15px "PT Sans", sans-serif;
+	color: #fff;
+	margin-left:10px;
+}
+.page_nav span.extend, .page_nav span.pages {
 	display:inline;
 	background:none;
 	border:none;
