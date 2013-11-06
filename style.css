@@ -75,7 +75,7 @@ body.portfolio {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Oswald', Arial, sans-serif;
+	font-family: 'PT Sans', Arial, sans-serif;
 	margin: 0;
 	color: #111;
 	font-weight:normal;
@@ -255,13 +255,13 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 
 
 #logo {
+  color: #000000;
+    display: block;
+    font-size: 1em;
+    height: 170px;
+    line-height: 1em;
     margin: 2em 0 0 2em;
-	line-height: 1em;
-	font-size: 1em;
-	color: #000;
-	height: 210px;
-    width: 225px;
-	display: block;
+    width: 240px;
 }
 
 #logo a {
@@ -272,7 +272,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 }
 
 #logo #site-title {
-	font-family: 'Oswald', Arial, sans-serif;
+	font-family: 'PT Sans', Arial, sans-serif;
 	color: #fff;
 }
 
@@ -288,7 +288,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 }
 
 #site-description {
-	font-family: 'Oswald', Arial, sans-serif;
+	font-family: 'PT Sans', Arial, sans-serif;
 	font-style: italic;
 	color:#ddd;
 	font-size:16px;
@@ -301,7 +301,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 #site-description h2 {
 	color: #CCC;
 	text-align: center;
-	font-family: 'Oswald', Arial, sans-serif;
+	font-family: 'PT Sans', Arial, sans-serif;
 }
 
 /* Navigation */
@@ -319,7 +319,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 	width: 87%;
 }
 #navigation ul {
-	font-family: 'Oswald', Arial, sans-serif;
+	font-family: 'PT Sans', Arial, sans-serif;
 	z-index:99;
 	margin:0;
 	padding:0;
@@ -329,11 +329,13 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 	color:#000;
 	display:block;
 	z-index:100;
-	padding:20px 10px;
+	letter-spacing: -1px;
+	font-style: italic;
+	padding:18px 10px;
 	line-height:18px;
 	text-decoration:none;
 	text-transform: uppercase;
-	font-size: 2em;
+	font-size: 1.5em;
 	background: none repeat scroll 0 0 #FFFFFF;
 }
 #navigation .menu > ul > li {
@@ -385,7 +387,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 	text-transform: uppercase;
 	text-decoration: none;
 	font-size: 2em;
-	font-family: 'Oswald', Arial, sans-serif;
+	font-family: 'PT Sans', Arial, sans-serif;
 	float: right;
 	width: auto;
 	display: block;
@@ -721,7 +723,7 @@ footer.entry-meta:before, footer.entry-meta:after {
 /* Typographic Elements */
 
 #content .entry-title, #portfolio .entry-title {
-	font-family: 'Oswald', Arial, sans-serif;
+	font-family: 'PT Sans', Arial, sans-serif;
 	text-transform: uppercase;
 	font-size:2.3em;
 	line-height:1.4em;
@@ -997,7 +999,7 @@ embed, iframe, object {
 	width:100%;
 }
 #portfolio .archive-title {
-	font-family: 'Oswald', Arial, sans-serif;
+	font-family: 'PT Sans', Arial, sans-serif;
 	font-size: 34px;
 	line-height: 48px;
 	border-bottom: 1px solid #DDD;
@@ -1048,7 +1050,7 @@ embed, iframe, object {
 	display:none;
 }
 #portfolio a.title-overlay {
-	font-family: 'Oswald', Arial, sans-serif;
+	font-family: 'PT Sans', Arial, sans-serif;
 	z-index:1;
 	display:block;
     font-size: 2.5em;
@@ -1146,7 +1148,7 @@ embed, iframe, object {
 	width: 90%;
 	margin: 40px auto 30px;
 	clear:both;
-	font-family: 'Oswald', Arial, sans-serif;
+	font-family: 'PT Sans', Arial, sans-serif;
 	font-size:16px;
 }
 #portfolio #nav-below {
@@ -1549,7 +1551,7 @@ h3#pings {
 }
 
 #conteudo-single p {
-	font-family: 'Oswald', Arial, sans-serif;
+	font-family: 'PT Sans', Arial, sans-serif;
 	color: #CCC;
     margin: 0 0 !important;
 	font-size: 1.2em;
@@ -1781,7 +1783,7 @@ font-size: 1.8em;
 	#navigation .menu-toggle {
 		cursor: pointer;
 		font: 14px/18px;
-		font-family: 'Oswald', Arial, sans-serif;
+		font-family: 'PT Sans', Arial, sans-serif;
 		display: block;
 		color:#fff;
 		padding:5px 10px;
