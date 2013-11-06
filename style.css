@@ -64,7 +64,7 @@ table { border-collapse: collapse; border-spacing: 0; }/* tables still need 'cel
 
 body {
 	font-family: Arial, sans-serif;
-     background: none repeat scroll 0 0 #EEE;
+     background: none repeat scroll 0 0 #fcf9e7;
 	color: #555;
 	margin:0;
 	padding: 0;
@@ -198,7 +198,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 	width: 297px;
 	position: fixed;
 	display: block;
-	background: url(images/bg-esq-v2.jpg) no-repeat fixed left top #677b6e;
+	background: url(images/bg-esq-v3.jpg) no-repeat fixed left top #677b6e;
 	padding: 0;
 	height: 100%;
 	overflow: hidden;
@@ -266,8 +266,8 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 
 #logo a {
 	position: absolute;
-    height: 210px;
-    width: 225px;
+    height: 170px;
+    width: 240px;
 	text-indent: -999999px;
 }
 
@@ -344,7 +344,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
     -ms-transition: all 0.2s ease-in-out;  /* IE10? */
     -o-transition: all 0.2s ease-in-out;  /* Opera 10.5+ */
     transition: all 0.2s ease-in-out;
-	background: none repeat scroll 0 0 #000000 !important;
+	background: none repeat scroll 0 0 #c14133 !important;
     padding-right: 10px;
 }
 #navigation .menu > ul > .current-page-item, #navigation .menu > ul > .current-menu-parent, #navigation .menu > ul > .current-menu-item {
@@ -356,11 +356,11 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 }
 
 #navigation .menu > ul > li:hover {
-	background: none repeat scroll 0 0 #BAB12D !important;
+	background: none repeat scroll 0 0 #dd9a3d !important;
 	}
 	
 #navigation .menu > ul > li.current-menu-item {	
-	background: none repeat scroll 0 0 #5BB6DD !important;
+	background: none repeat scroll 0 0 #dd9a3d !important;
 }
 #navigation ul li {
 	/*float:left;*/
@@ -727,9 +727,7 @@ footer.entry-meta:before, footer.entry-meta:after {
 	text-transform: uppercase;
 	font-size:2.3em;
 	line-height:1.4em;
-	text-shadow: 0px 1px 1px #CCC;
-	-webkit-box-shadow: 0 1px 0 0 #CCC;
-	color: #000;
+	color: #c14133;
 }
 
 #portfolio h1.entry-title {
@@ -1559,7 +1557,7 @@ h3#pings {
 }
 
 h1.entry-title {
-	margin: 0 0 10px 70px;
+	margin: 0 0 10px 0;
 }
 
 #editar-single {
